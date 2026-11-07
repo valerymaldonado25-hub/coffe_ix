@@ -1,0 +1,119 @@
+/* Estilos generales del cuerpo */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilos del Encabezado con Degradado */
+header {
+    background: linear-gradient(135deg, #1b4d3e, #2e8b57);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Estilos del Menú de Navegación (NAV) */
+nav {
+    background-color: #112d23;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que se acomode en móviles */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a8d5ba;
+}
+
+/* Estilos de Secciones */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#nosotros {
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.color-seccion {
+    background-color: #eaf4ed;
+}
+
+/* Estilos para las imágenes */
+.galeria-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.galeria-imagenes img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Estilos del Pie de Página */
+footer {
+    background-color: #0b1d17;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Diseño Responsivo para Celulares (Media Queries) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Convierte el menú horizontal en vertical */
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .galeria-imagenes img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
